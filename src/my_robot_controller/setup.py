@@ -14,7 +14,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='student',
-    maintainer_email='sanchesterus6@gmail.com',
+    maintainer_email='kirillgame912@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -23,7 +23,12 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': ['my_first_node = my_robot_controller.my_first_node:main'
+        'console_scripts': [
+            'my_first_node = my_robot_controller.my_first_node:main',
+            'battery_simulator = my_robot_controller.battery_simulator:main',
+            'battery_monitor = my_robot_controller.battery_monitor:main',
+            'number_publisher = my_robot_controller.number_publisher:main',
+            'number_counter = my_robot_controller.number_counter:main'
         ],
     },
 )
